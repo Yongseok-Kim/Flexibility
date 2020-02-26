@@ -95,7 +95,7 @@ classdef NetLoadSampling  < handle
         %% Curtail renewable energy
         % ---------------------------------------------
         function CultrailedRen = myCurtailment(obj,RenScenario,Para)
-                        
+                        %% 3 type of Curtailment 
             if strcmp(Para.CurtailMethod,'PeakReduction')
                 L = length(RenScenario);
                 CultrailedRen=RenScenario; 
